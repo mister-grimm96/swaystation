@@ -102,7 +102,7 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 
 ![wabar themes](https://github.com/mister-grimm96/swaystation-misc/blob/main/screenshots/waybarSwitching.gif?raw=true)
 
-### Launcher and power menu: Rofi
+### One Launcher to rule them all : Rofi
 
 ![Launcher](https://github.com/mister-grimm96/swaystation-misc/blob/main/screenshots/launcher.png?raw=true)
 
