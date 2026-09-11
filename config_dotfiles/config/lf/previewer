@@ -1,9 +1,87 @@
 #!/usr/bin/env bash
-case "$(file -Lb --mime-type -- "$1")" in
+
+file="$1"
+width="$2"
+height="$3"
+
+case "$(file -Lb --mime-type -- "$file")" in
   image/*)
-    chafa -f sixel -s "$2x$3" --animate off --polite on -t 1 --bg black "$1"
+    chafa \
+      -f sixel \
+      -s "$width"x"$height" \
+      --animate off \
+      --polite on \
+      -t 1 \
+      --bg black \
+      "$file"
     ;;
+
   text/*)
-    cat "$1"
+    cat -- "$file"
     ;;
-esac
+
+  application/pdf)
+    tmp="/tmp/lf-pdf-preview"
+
+    if pdftoppm \
+      -f 1 \
+      -singlefile \
+      -png \
+      "$file" \
+      "$tmp" 2>/dev/null
+  then
+    chafa \
+      -f sixel \
+      -s "$width"x"$height" \
+      --animate off \
+      --polite on \
+      -t 1 \
+      --bg black \
+      "$tmp.png"
+    fi
+
+    rm -f "$tmp.png"
+    ;;
+
+  audio/*)
+    tmp="/tmp/lf-audio-preview"
+
+    if ffmpeg \
+      -v error \
+      -i "$file" \
+      -map 0:v:0 \
+      -frames:v 1 \
+      -y "$tmp.jpg" 2>/dev/null
+  then
+    chafa \
+      -f sixel \
+      -s "$width"x"$height" \
+      --animate off \
+      --polite on \
+      -t 1 \
+      --bg black \
+      "$tmp.jpg"
+    fi
+
+    rm -f "$tmp.jpg"
+    ;;
+
+  video/*)
+    ffmpeg \
+      -v error \
+      -ss 00:00:01 \
+      -i "$file" \
+      -frames:v 1 \
+      -f image2pipe \
+      -vcodec mjpeg \
+      - 2>/dev/null |
+      chafa \
+      -f sixel \
+      -s "$width"x"$height" \
+      --animate off \
+      --polite on \
+      -t 1 \
+      --bg black
+    ;;
+
+  esac
