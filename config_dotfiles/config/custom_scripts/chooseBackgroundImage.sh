@@ -17,11 +17,10 @@ while IFS= read -r -d '' file; do
   name="${file##*/}"
 
   printf '%s\0icon\x1f%s\n' \
-    "$name" \
+    "$file" \
     "$file"
 done < <(
   find "$backgrounds_directory" \
-    -maxdepth 1 \
     -type f \
     \( \
     -iname "*.jpg" -o \
@@ -42,7 +41,7 @@ set_wallpaper() {
   echo "$selected_wall" > "$cache_file"
   pkill swaybg
   swaybg \
-    -i "$backgrounds_directory/$selected_wall" \
+    -i "$selected_wall" \
     -m fill \
     >/dev/null 2>&1 &
 }
@@ -62,7 +61,6 @@ if [[ -n "$ROFI_RETV" ]]; then
 fi
 
 if ! find "$backgrounds_directory" \
-  -maxdepth 1 \
   -type f \
   \( \
   -iname "*.jpg" -o \

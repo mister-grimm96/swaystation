@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 set_background() {
-  local bg_dir="$HOME/Pictures/backgrounds"
   local wall_name
   wall_name="$(<"$HOME/.cache/wall.txt")"
   pkill swaybg
   if [[ -z "$wall_name" ]]; then
     swaybg -i "$HOME/.config/walls/wall.png" -m fill  > /dev/null 2>&1 &
   else
-    swaybg -i "$bg_dir/$wall_name" -m fill  > /dev/null 2>&1 &
+    swaybg -i "$wall_name" -m fill  > /dev/null 2>&1 &
   fi
   exit 0
 }
