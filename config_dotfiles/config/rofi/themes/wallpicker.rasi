@@ -1,0 +1,141 @@
+* {
+  margin : 0;
+  padding : 0;
+  spacing : 0;
+  dark : #222222;
+  red : #ea6962;
+  red-alt : #ca3433;
+  yellow : #d8a657;
+  cream : #d4be98;
+  highlight : underline bold #ca3433;
+  font : "JetBrainsMono Nerd Font Propo ExtraBold 14";
+}
+
+configuration {
+  display-drun : "APPS";
+  display-run : "CMD";
+  display-window : "WIN";
+}
+
+window {
+  width : 75%;
+  border : 3;
+  margin: 0;
+  border-color : @yellow;
+  background-color : @dark;
+  location : center;
+  orientaion : horizontal;
+  children : [inputbar, message, listview];
+}
+
+inputbar {
+  background-color : @dark;
+  children : [prompt,entry];
+}
+
+prompt {
+  margin : 6 0 6 6;
+  padding : 3 6;
+  text-color : @dark;
+  border : 3;
+  border-color : @red;
+  background-color : @red;
+}
+
+entry {
+  margin : 6;
+  padding : 3 6;
+  text-color : @red;
+  border : 3;
+  border-color : @yellow;
+  background-color : @dark;
+}
+
+listview {
+  lines : 3;
+  columns : 6;
+  children : [element];
+  margin : 0 6 6 6;
+  padding : 6 6 0 6;
+  border : 3;
+  border-color : @yellow;
+  background-color : @dark;
+}
+
+element {
+  margin : 0 0 6 0;
+  background-color : @dark;
+
+  orientation : vertical;
+  children : [element-icon, element-text];
+}
+
+element selected active {
+  text-color : @cream;
+  background-color : @red-alt;
+}
+
+element-text {
+  expand : false;
+
+  horizontal-align : 0.5;
+  vertical-align : 1.0;
+
+  padding : 6 12;
+  margin : 6;
+
+  text-color : @dark;
+  background-color : @yellow;
+  font : "JetBrainsMono Nerd Font Propo ExtraBold 10";
+}
+
+
+element-text selected {
+  text-color : @dark;
+  background-color : @red;
+}
+
+element-text selected active {
+  text-color : @cream;
+  background-color : @red-alt;
+}
+
+element-icon{
+  size : 200;
+  border : 3;
+  border-color: @yellow;
+  margin : 6;
+  padding : 2;
+  background-color : @dark;
+}
+
+element-icon selected {
+  text-color : @yellow;
+  border-color: @red;
+  background-color : @dark;
+}
+
+element-icon selected active {
+  text-color : @cream;
+  background-color : @red-alt;
+}
+
+message {
+  margin : 0;
+  expand : true;
+  background-color : @dark;
+  children : [textbox];
+}
+
+textbox {
+  expand : true;
+  padding : 6;
+  border-color : @red-alt;
+  background-color : @dark;
+  text-color : @red-alt;
+}
+
+error-message {
+  expand : true;
+  text-color : @dark;
+}
