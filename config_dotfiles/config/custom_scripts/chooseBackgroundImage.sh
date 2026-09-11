@@ -17,7 +17,7 @@ while IFS= read -r -d '' file; do
   name="${file##*/}"
 
   printf '%s\0icon\x1f%s\n' \
-    "$file" \
+    "$name" \
     "$file"
 done < <(
   find "$backgrounds_directory" \
@@ -38,10 +38,23 @@ done < <(
 set_wallpaper() {
   local selected_wall="$1"
   [[ -z "$selected_wall" ]] && return
-  echo "$selected_wall" > "$cache_file"
+
+  local wall_path
+  wall_path="$(
+    find "$backgrounds_directory" \
+      -type f \
+      -name "$selected_wall" \
+      -print -quit
+  )"
+
+  [[ -z "$wall_path" ]] && return
+
+  echo "$wall_path" > "$cache_file"
+
   pkill swaybg
+
   swaybg \
-    -i "$selected_wall" \
+    -i "$wall_path" \
     -m fill \
     >/dev/null 2>&1 &
 }
