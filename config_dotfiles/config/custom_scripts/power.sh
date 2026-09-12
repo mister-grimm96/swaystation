@@ -21,21 +21,21 @@ fi
 lock="swaylock -i ~/.config/walls/lock.png"
 
 options=(
-    "LOCK SCREEN"
+    "LOCK"
     "SUSPEND"
-    "LOG OUT"
+    "LOG-OUT"
     "RESTART"
-    "POWER OFF"
+    "POWER-OFF"
 )
 
 chosen=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/themes/powermenu.rasi"')
 
 # Perform the action based on user choice
 case "$chosen" in
-    "LOCK SCREEN") eval "$lock" ;;
+    "LOCK") eval "$lock" ;;
     "SUSPEND") eval "$suspend" ;;
-    "LOG OUT") eval "$logout" ;;
+    "LOG-OUT") eval "$logout" ;;
     "RESTART") systemctl reboot ;;
-    "POWER OFF") systemctl poweroff ;;
+    "POWER-OFF") systemctl poweroff ;;
     *) exit 1 ;;
 esac

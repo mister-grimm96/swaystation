@@ -14,11 +14,10 @@
 }
 
 window {
-  width : 60%;
+  width : 53%;
   location : center;
   children : [listview];
   padding : 0;
-  border : 3;
   background-color : @transparent;
   border-color : @transparent;
 }
@@ -27,17 +26,17 @@ listview {
   lines : 1;
   columns : 5;
   margin : 0;
-  padding : 2 2;
+  padding : 5;
   background-color : @green;
-  border : 5;
+  border : 8;
   border-color : @dark;
   cycle : false;
 }
 
 element {
   background-color : @dark;
-  padding : 0;
-  border : 5;
+  padding : 3;
+  border : 4;
   border-color : @dark;
   margin : 4 4;
 }
