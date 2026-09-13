@@ -46,13 +46,6 @@ map("n", "<C-S-J>", "3<C-w>-", { desc = "Resize Right", noremap = true, silent =
 map("n", "<C-S-K>", "3<C-w>+", { desc = "Resize Up", noremap = true, silent = false })
 map("n", "<C-S-L>", "3<C-w><", { desc = "Resize Down", noremap = true, silent = false })
 
--- Editing Keymaps
-map("n", "<leader>q", ":q<cr>", { desc = "Quit File", noremap = true, silent = true })
-map("n", "<leader>Q", ":qa<cr>", { desc = "Quit All Files", noremap = true, silent = true })
-map("n", "<leader>w", ":w<cr>", { desc = "Write File", noremap = true, silent = true })
-map("n", "<leader>W", ":wa<cr>", { desc = "Write All Files", noremap = true, silent = true })
-map("n", "<leader>M", ":messages<cr>", { desc = "Show Messages", noremap = true, silent = true })
-
 -- Nvim Options and Commands
 map("n", "<leader>ow", ":set wrap!<cr>", { desc = "Toggle Wrap Lines", noremap = true, silent = true })
 map("n", "<leader>ol", ":set linebreak!<cr>", { desc = "Toggle Break Lines", noremap = true, silent = true })

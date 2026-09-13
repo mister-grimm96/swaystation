@@ -26,16 +26,12 @@ return {
 				prepend_args = { "-s", "2" },
 			},
 		},
-		format_on_save = {
-			lsp_fallback = true,
-			async = false,
-			timeout_ms = 1000,
-		},
+		format_on_save = false,
 	},
 	keys = {
 		{
 			mode = { "n", "v" },
-			"<leader>Fm",
+			"<C-S-M>",
 			function()
 				require("conform").format({
 					lsp_fallback = true,
