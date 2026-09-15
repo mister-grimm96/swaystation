@@ -9,6 +9,15 @@
   --toolbar-field-focus-border-color: #000000 !important;
   --urlbarView-highlight-background: #d8a657 !important;
   --urlbarView-highlight-color: #000000 !important;
+  --accent-color: #d8a657 !important; /* Replace with your preferred color */
+  --focus-outline-color: #d8a657 !important;
+  --toolbar-field-focus-border-color: #d8a657 !important;
+}
+
+@media (-moz-windows-accent-color) {
+  :root {
+    --accent-color: -moz-win-accentcolor !important;
+  }
 }
 
 /* navbar */
@@ -39,9 +48,16 @@
 }
 
 /* SIDEBAR (BOOKMARKS / HISTORY) */
+.wrapper,
 #sidebar-box,
 #sidebar,
 #sidebar-main {
+  background-color: #181818 !important;
+}
+.moz-card,
+.splitter,
+.splitter-launcher-splitter,
+.sidebar-splitter {
   background-color: #222222 !important;
 }
 

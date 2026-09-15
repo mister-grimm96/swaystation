@@ -10,3 +10,5 @@ com.getpostman.Postman
 com.mongodb.Compass
 com.jgraph.drawio.desktop
 org.pgadmin.pgadmin4
+com.obsproject.Studio
+com.obsproject.Studio.Plugin.Gstreamer

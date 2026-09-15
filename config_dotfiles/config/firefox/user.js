@@ -10,6 +10,8 @@ user_pref("browser.startup.homepage", "about:newtab");
 user_pref("browser.display.background_color", "#222222");
 user_pref("browser.display.foreground_color", "#ffffff");
 
+user_pref("devtools.chrome.enabled", true);
+user_pref("devtools.debugger.remote-enabled", true);
 // ==============================================================
 /** NEW TAB PAGE & CONTENT RECOMMENDATIONS **/
 user_pref("browser.newtabpage.enabled", false);
@@ -225,3 +227,10 @@ user_pref("mousewheel.min_line_scroll_amount", 10);
 user_pref("general.smoothScroll.mouseWheel.durationMinMS", 80);
 user_pref("general.smoothScroll.currentVelocityWeighting", "0.15");
 user_pref("general.smoothScroll.stopDecelerationWeighting", "0.6");
+
+// Nova shit
+user_pref("browser.nova.enabled", false);
+user_pref("browser.aboutaddons.novaThemesPickerEnabled", false);
+user_pref("browser.newtabpage.activity-stream.nova.enabled", false);
+user_pref("browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize", false);
+user_pref("pdfjs.enableNova", false);
