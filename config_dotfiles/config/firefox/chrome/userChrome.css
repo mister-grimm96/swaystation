@@ -3,15 +3,18 @@
   filter: blur(0) !important;
   backdrop-filter: blur(0) !important;
   border-radius: 0px !important;
+  outline-color: #333333;
 }
+
 :root {
   --toolbar-bgcolor: #000000 !important;
-  --toolbar-field-focus-border-color: #000000 !important;
-  --urlbarView-highlight-background: #d8a657 !important;
-  --urlbarView-highlight-color: #000000 !important;
-  --accent-color: #d8a657 !important; /* Replace with your preferred color */
-  --focus-outline-color: #d8a657 !important;
   --toolbar-field-focus-border-color: #d8a657 !important;
+  --accent-color: #d8a657 !important;
+  --urlbarview-background-color-selected: #d8a657 !important;
+  --urlbarview-text-color-selected: #000000 !important;
+  --focus-outline-color: #d8a657 !important;
+  --urlbar-results-hover-bgcolor: #d4a359 !important;
+  --urlbar-results-hover-bgcolor-hover: #d4a359 !important;
 }
 
 @media (-moz-windows-accent-color) {
@@ -20,7 +23,7 @@
   }
 }
 
-/* navbar */
+/* NAVBAR */
 #nav-bar {
   background-color: #000000 !important;
   color: #ffffff !important;
@@ -54,6 +57,7 @@
 #sidebar-main {
   background-color: #181818 !important;
 }
+
 .moz-card,
 .splitter,
 .splitter-launcher-splitter,
@@ -61,17 +65,17 @@
   background-color: #222222 !important;
 }
 
-/* Tree container */
+/* TREE CONTAINER */
 .sidebar-placesTree {
   background-color: transparent !important;
 }
 
-/* Hovered item */
+/* HOVERED ITEM */
 .sidebar-placesTree treechildren::-moz-tree-row(hover) {
   background-color: #282828 !important;
 }
 
-/* Selected item */
+/* SELECTED ITEM */
 .sidebar-placesTree treechildren::-moz-tree-row(selected) {
   background-color: #282828 !important;
 }
@@ -79,14 +83,16 @@
 /* TEXT SELECTION INSIDE URL BAR */
 #urlbar-input:focus::selection {
   background-color: #d8a657 !important;
-  color: #000000 !important;
+  color: #222222 !important;
 }
 
-#urlbar-background,
+/* URL BAR */
+.urlbarView-background,
 .urlbar-background {
-  background-color: #202020 !important;
+  background-color: #222222 !important;
 }
 
+/* APP MENU */
 #appMenu-popup panelview {
   background-color: #222222 !important;
 }

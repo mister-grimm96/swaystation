@@ -12,6 +12,7 @@ user_pref("browser.display.foreground_color", "#ffffff");
 
 user_pref("devtools.chrome.enabled", true);
 user_pref("devtools.debugger.remote-enabled", true);
+user_pref("identity.fxaccounts.enabled", false);
 // ==============================================================
 /** NEW TAB PAGE & CONTENT RECOMMENDATIONS **/
 user_pref("browser.newtabpage.enabled", false);
