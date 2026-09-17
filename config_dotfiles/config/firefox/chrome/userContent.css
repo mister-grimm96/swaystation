@@ -1,9 +1,35 @@
+@-moz-document url("about:home"), url("about:blank"), url("about:newtab"), url("about:privatebrowsing"), url("chrome://browser/content/blanktab.html") {
+  .showPrivate,
+  .showSearch {
+    display: none !important;
+  }
+
+  .click-target-container *,
+  .top-sites-list * {
+    color: #fff !important;
+  }
+
+  body,
+  body::before {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000 no-repeat url(img/wall.png) center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 @-moz-document url-prefix("about:preferences") {
   * {
     border-radius: 0 !important;
     border-color: #585858 !important;
     outline-color: #585858 !important;
   }
+
   :root,
   page,
   treechildren #engineChildren,
@@ -21,14 +47,16 @@
   #handlersView {
     background-color: #222222 !important;
   }
+
   #categories .category,
   #helpButton,
   #addonsButton {
     border-width: 2px !important;
     margin: 5px !important;
   }
+
   .toggle-button::before {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
     background-color: #d8a657 !important;
   }
 }
@@ -39,6 +67,7 @@
     border-color: #585858 !important;
     outline-color: #585858 !important;
   }
+
   :root,
   treechildren #engineChildren,
   .sticky-container,
@@ -56,37 +85,16 @@
   #handlersView {
     background-color: #222222 !important;
   }
+
   #categories .category,
   #help-button,
   #preferencesButton {
     border-width: 2px !important;
     margin: 5px !important;
   }
-  .toggle-button::before {
-    border-radius: 0px !important;
-    background-color: #d8a657 !important;
-  }
-}
 
-@-moz-document url("about:home"), url("about:blank"), url("about:newtab"), url("about:privatebrowsing"), url("chrome://browser/content/blanktab.html") {
-  .showPrivate,
-  .showSearch {
-    display: none !important;
-  }
-  .click-target-container *,
-  .top-sites-list * {
-    color: #fff !important;
-  }
-  body,
-  body::before {
-    content: "";
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #000 no-repeat url(img/wall.png) center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+  .toggle-button::before {
+    border-radius: 0 !important;
+    background-color: #d8a657 !important;
   }
 }

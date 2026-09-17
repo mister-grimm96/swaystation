@@ -1,8 +1,7 @@
-/* ROOT VARIABLES */
 * {
   filter: blur(0) !important;
   backdrop-filter: blur(0) !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   outline-color: #333333;
 }
 
@@ -23,13 +22,11 @@
   }
 }
 
-/* NAVBAR */
 #nav-bar {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
 
-/* TAB BAR */
 #tabbrowser-tabs:not([vertical]) .tabbrowser-tab {
   min-width: 50px !important;
   max-width: 180px !important;
@@ -37,7 +34,7 @@
 }
 
 #tabbrowser-tabs:not([vertical]) .tab-stack {
-  margin-inline: 0px !important;
+  margin-inline: 0 !important;
 }
 
 .tabbrowser-tab .tab-background {
@@ -50,7 +47,6 @@
   outline: 3px solid #d8a657 !important;
 }
 
-/* SIDEBAR (BOOKMARKS / HISTORY) */
 .wrapper,
 #sidebar-box,
 #sidebar,
@@ -65,34 +61,28 @@
   background-color: #222222 !important;
 }
 
-/* TREE CONTAINER */
 .sidebar-placesTree {
   background-color: transparent !important;
 }
 
-/* HOVERED ITEM */
 .sidebar-placesTree treechildren::-moz-tree-row(hover) {
   background-color: #282828 !important;
 }
 
-/* SELECTED ITEM */
 .sidebar-placesTree treechildren::-moz-tree-row(selected) {
   background-color: #282828 !important;
 }
 
-/* TEXT SELECTION INSIDE URL BAR */
 #urlbar-input:focus::selection {
   background-color: #d8a657 !important;
   color: #222222 !important;
 }
 
-/* URL BAR */
 .urlbarView-background,
 .urlbar-background {
   background-color: #222222 !important;
 }
 
-/* APP MENU */
 #appMenu-popup panelview {
   background-color: #222222 !important;
 }
