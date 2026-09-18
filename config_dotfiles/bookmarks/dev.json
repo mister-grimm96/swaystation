@@ -1,0 +1,86 @@
+[
+  {
+    "title": "github",
+    "url": "https://github.com"
+  },
+  {
+    "title": "codeberg",
+    "url": "https://codeberg.org"
+  },
+  {
+    "title": "w3schools javascript",
+    "url": "https://www.w3schools.com/js/default.asp"
+  },
+  {
+    "title": "w3schools css",
+    "url": "https://www.w3schools.com/css/default.asp"
+  },
+  {
+    "title": "typescript",
+    "url": "https://www.typescriptlang.org/docs"
+  },
+  {
+    "title": "node.js",
+    "url": "https://nodejs.org/docs/latest/api"
+  },
+  {
+    "title": "express.js routing",
+    "url": "https://expressjs.com/en/guide/routing.html"
+  },
+  {
+    "title": "npm",
+    "url": "https://www.npmjs.com"
+  },
+  {
+    "title": "react",
+    "url": "https://react.dev/learn"
+  },
+  {
+    "title": "react router",
+    "url": "https://reactrouter.com/home"
+  },
+  {
+    "title": "next.js",
+    "url": "https://nextjs.org/docs"
+  },
+  {
+    "title": "redux",
+    "url": "https://redux.js.org/introduction/getting-started"
+  },
+  {
+    "title": "tanstack query",
+    "url": "https://tanstack.com/query/latest"
+  },
+  {
+    "title": "tailwind css",
+    "url": "https://tailwindcss.com/docs/installation/using-vite"
+  },
+  {
+    "title": "daisyui",
+    "url": "https://daisyui.com/docs/intro"
+  },
+  {
+    "title": "shadcn ui",
+    "url": "https://ui.shadcn.com/docs/installation"
+  },
+  {
+    "title": "drawsql",
+    "url": "https://drawsql.app/draw"
+  },
+  {
+    "title": "prisma orm",
+    "url": "https://www.prisma.io/docs/orm"
+  },
+  {
+    "title": "prisma postgresql quickstart",
+    "url": "https://www.prisma.io/docs/prisma-orm/quickstart/postgresql"
+  },
+  {
+    "title": "prisma data models",
+    "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/models"
+  },
+  {
+    "title": "prisma crud queries",
+    "url": "https://www.prisma.io/docs/orm/prisma-client/queries/crud"
+  }
+]

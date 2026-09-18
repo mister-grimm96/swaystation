@@ -1,0 +1,30 @@
+[
+  {
+    "title": "arch linux packages",
+    "url": "https://archlinux.org/packages"
+  },
+  {
+    "title": "arch wiki",
+    "url": "https://wiki.archlinux.org/title/Main_page"
+  },
+  {
+    "title": "arch linux status",
+    "url": "https://status.archlinux.org/"
+  },
+  {
+    "title": "phoronix",
+    "url": "https://www.phoronix.com"
+  },
+  {
+    "title": "it's foss",
+    "url": "https://itsfoss.com"
+  },
+  {
+    "title": "distrowatch",
+    "url": "https://distrowatch.com"
+  },
+  {
+    "title": "flathub",
+    "url": "https://flathub.org"
+  }
+]

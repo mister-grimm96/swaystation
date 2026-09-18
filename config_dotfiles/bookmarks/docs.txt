@@ -1,5 +1,0 @@
-https://neovim.io/doc/user
-https://github.com/rockerBOO/awesome-neovim
-https://wiki.hypr.land
-https://github.com/swaywm/sway/wiki
-https://github.com/Alexays/Waybar/wiki
