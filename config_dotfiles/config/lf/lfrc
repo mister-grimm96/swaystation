@@ -46,21 +46,12 @@ cmd open &{{
 #=====================================================================================================
 # set wallpaper
 cmd setwall %{{
-  # get base name with pure bash
-  filename="${f%/}"
-  while [[ "$filename" == */ ]]; do
-    filename="${filename%/}"
-  done
-  filename="${filename##*/}"
-
-  echo "$filename" > "$HOME/.cache/wall.txt"
-
-  selected_wall="$(<"$HOME/.cache/wall.txt")"
-
+  selected_wall="$f"
+  echo "$selected_wall" > "$HOME/.cache/wall.txt"
   case "${selected_wall,,}" in
     *.jpg|*.jpeg|*.png|*.webp)
       pkill swaybg
-      swaybg -i "$selected_wall" -m fill  > /dev/null 2>&1 &
+      swaybg -i "$selected_wall" -m fill > /dev/null 2>&1 &
       exit 0
       ;;
     *)
