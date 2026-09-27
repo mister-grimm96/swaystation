@@ -1,22 +1,22 @@
 [
   {
-    "title": "neovim documentation",
+    "title": "Neovim Documentation",
     "url": "https://neovim.io/doc/user"
   },
   {
-    "title": "awesome neovim",
+    "title": "Awesome Neovim",
     "url": "https://github.com/rockerBOO/awesome-neovim"
   },
   {
-    "title": "hyprland wiki",
+    "title": "Hyprland WiKi",
     "url": "https://wiki.hypr.land"
   },
   {
-    "title": "sway wiki",
+    "title": "Sway WiKi",
     "url": "https://github.com/swaywm/sway/wiki"
   },
   {
-    "title": "waybar wiki",
+    "title": "Waybar WiKi",
     "url": "https://github.com/Alexays/Waybar/wiki"
   }
 ]

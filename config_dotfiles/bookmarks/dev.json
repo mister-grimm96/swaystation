@@ -1,86 +1,82 @@
 [
   {
-    "title": "github",
+    "title": "Github",
     "url": "https://github.com"
   },
   {
-    "title": "codeberg",
+    "title": "Codeberg",
     "url": "https://codeberg.org"
   },
   {
-    "title": "w3schools javascript",
+    "title": "W3schools JavaScript",
     "url": "https://www.w3schools.com/js/default.asp"
   },
   {
-    "title": "w3schools css",
+    "title": "W3schools CSS",
     "url": "https://www.w3schools.com/css/default.asp"
   },
   {
-    "title": "typescript",
+    "title": "TypeScript",
     "url": "https://www.typescriptlang.org/docs"
   },
   {
-    "title": "node.js",
+    "title": "NodeJs",
     "url": "https://nodejs.org/docs/latest/api"
   },
   {
-    "title": "express.js routing",
+    "title": "ExpressJs Routing",
     "url": "https://expressjs.com/en/guide/routing.html"
   },
   {
-    "title": "npm",
+    "title": "NPM",
     "url": "https://www.npmjs.com"
   },
   {
-    "title": "react",
+    "title": "React",
     "url": "https://react.dev/learn"
   },
   {
-    "title": "react router",
+    "title": "React Router",
     "url": "https://reactrouter.com/home"
   },
   {
-    "title": "next.js",
+    "title": "NextJs",
     "url": "https://nextjs.org/docs"
   },
   {
-    "title": "redux",
+    "title": "Redux",
     "url": "https://redux.js.org/introduction/getting-started"
   },
   {
-    "title": "tanstack query",
+    "title": "Tanstack Query",
     "url": "https://tanstack.com/query/latest"
   },
   {
-    "title": "tailwind css",
+    "title": "Tailwind CSS",
     "url": "https://tailwindcss.com/docs/installation/using-vite"
   },
   {
-    "title": "daisyui",
+    "title": "DaisyUi",
     "url": "https://daisyui.com/docs/intro"
   },
   {
-    "title": "shadcn ui",
+    "title": "ShadcnUi",
     "url": "https://ui.shadcn.com/docs/installation"
   },
   {
-    "title": "drawsql",
+    "title": "DrawSQL",
     "url": "https://drawsql.app/draw"
   },
   {
-    "title": "prisma orm",
-    "url": "https://www.prisma.io/docs/orm"
-  },
-  {
-    "title": "prisma postgresql quickstart",
+    "title": "Prisma Postgresql Quickstart",
     "url": "https://www.prisma.io/docs/prisma-orm/quickstart/postgresql"
   },
   {
-    "title": "prisma data models",
+    "title": "Prisma Data Models",
     "url": "https://www.prisma.io/docs/orm/prisma-schema/data-model/models"
   },
   {
-    "title": "prisma crud queries",
+    "title": "Prisma Crud Queries",
     "url": "https://www.prisma.io/docs/orm/prisma-client/queries/crud"
   }
 ]

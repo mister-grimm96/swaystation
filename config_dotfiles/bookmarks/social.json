@@ -1,22 +1,26 @@
 [
   {
-    "title": "instagram",
+    "title": "Instagram",
     "url": "https://instagram.com"
   },
   {
-    "title": "gmail",
+    "title": "Gmail",
     "url": "https://gmail.com"
   },
   {
-    "title": "reddit",
+    "title": "Reddit",
     "url": "https://reddit.com"
   },
   {
-    "title": "youtube",
+    "title": "Youtube",
     "url": "https://youtube.com"
   },
   {
-    "title": "youtube subscriptions",
+    "title": "Youtube Subscriptions",
     "url": "https://youtube.com/feed/subscriptions"
+  },
+  {
+    "title": "Youtube Playlists",
+    "url": "https://youtube.com/feed/playlists"
   }
 ]
