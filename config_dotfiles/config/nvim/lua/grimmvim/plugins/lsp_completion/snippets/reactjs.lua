@@ -20,7 +20,7 @@ local compo = {
           </>
         )
       }}
-      export {{ {} }};
+      export default {};
       ]],
 			{
 				i(1, "Compo"),

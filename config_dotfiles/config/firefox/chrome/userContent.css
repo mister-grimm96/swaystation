@@ -23,11 +23,21 @@
   }
 }
 
-@-moz-document url-prefix("about:preferences") {
+@-moz-document url-prefix("about:") {
   * {
     border-radius: 0 !important;
     border-color: #585858 !important;
     outline-color: #585858 !important;
+
+    /* Main primary accent variables */
+    --color-accent-primary: #d8a657 !important;
+    --color-accent-primary-hover: #f6c657 !important;
+    --color-accent-primary-active: #f6c657 !important;
+
+    /* Legacy / Button backgrounds for compatibility */
+    --in-content-primary-button-background: #d8a657 !important;
+    --in-content-primary-button-background-hover: #f6c657 !important;
+    --in-content-primary-button-background-active: #f6c657 !important;
   }
 
   :root,
